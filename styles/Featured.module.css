@@ -1,0 +1,152 @@
+.container{
+    width: 100%;
+    background: white;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.card{
+    flex:1;
+    position: relative;
+}
+.card:first-child{
+    flex:2 !important;
+}
+.card:last-child{
+    width: 60%;
+    justify-content: center;
+}
+.quoteContainer{
+    background:#c4c4c4;
+    padding: 30px;
+    border-radius: 20px;
+}
+.quoteIcon{
+    position: absolute;
+    top: -20px;
+    left:30px;
+}
+.title{
+    font-size: 56px;
+    line-height: 66px;
+    font-weight: 800;
+    color: black;
+}
+.desc{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+
+
+
+/* FEATURED PRODUCT SECTION */
+.featuredProducts{
+    width: 100%;
+    margin-top: -150px;
+}
+
+.featuredWrapper{
+    padding: 100px;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    flex:1;
+    width: 392.01px;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid #DBE4E9;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    padding: 40px;
+    position: relative;
+}
+.boxTitle{
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 34px;
+}
+.boxDesc{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 26px;
+}
+
+
+/*MEDIA MOBILE VIEW */
+@media only screen and (max-width:480px){
+    .wrapper{
+        flex-direction: column !important;
+        padding: 20px;
+    }
+    .quoteContainer{
+        padding: 20px;
+    }
+    .card:last-child{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .featuredWrapper{
+        margin-top: 100px;
+        padding: 50px;
+        flex-direction: column !important;
+    }
+    .box{
+        padding: 20px;
+        width: 80% !important;
+    }
+    .title{
+        font-size: 40px;
+    }
+    
+}
+
+
+/*MEDIA TABLET VIEW */
+@media only screen and (max-width:768px){
+    .wrapper{
+        flex-direction: row;
+        padding: 20px;
+    }
+    .quoteContainer{
+        padding: 20px;
+        width: 80%;
+    }
+    .card:last-child{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .card:first-child{
+        flex:1 !important;
+    }
+    .featuredWrapper{
+        margin: 150px auto 20px;
+        padding: 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .box{
+        padding: 20px;
+        width: 60% !important;
+    }
+    .boxTitle{
+        font-size: 18px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    
+}

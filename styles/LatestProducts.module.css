@@ -1,0 +1,94 @@
+.container{
+    width:100%;
+}
+.wrapperContainer{
+    padding: 0 100px;
+    margin: 100px auto 0;
+}
+.title{
+    font-size: 40px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 700;
+    color: black;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+.card{
+    flex:1;
+    position: relative;
+    margin-top: 50px;
+    
+}
+.cardTitle{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color: #2d2d2d;
+}
+.cardOffers{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color: #3db5e6;
+    margin-top: -10px;
+}
+.cardDesc{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    color: #b3b3b3;
+    margin-top: -10px;
+}
+
+
+
+/* LATEST PHONES */
+.latestContainer{
+    margin-top: 50px;
+}
+
+.sellingSlide{
+    width: 100% !important;
+  }
+
+
+/* MEDIA MOBILE VIEW */
+@media only screen and (max-width:480px){
+    .wrapperContainer{
+        Padding: 20px;
+        margin: 50px auto 0;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+    }
+          
+}
+
+
+/* MEDIA TABLET/IPAD VIEW */
+@media only screen and (max-width:768px){
+    .wrapperContainer{
+        Padding: 20px;
+        margin: 50px auto 0;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+    }
+          
+}

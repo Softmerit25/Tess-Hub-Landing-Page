@@ -1,0 +1,101 @@
+.container{
+    width: 100%;
+}
+.title{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.wrapperContainer{
+    padding: 0 100px;
+    padding-right: 0;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    flex: 1;
+    position:relative;
+    background: #f5f6f8;;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTitle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22.62px;
+}
+.cardDesc{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23.62px;
+}
+.cardOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.cardPrice{
+    font-weight: 700;
+    font-size: 28.88px;
+    line-height: 38.62px;
+}
+.cardBtn{
+    background: #DA0202;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.86px;
+    cursor: pointer;
+}
+.topSellingSlide{
+    width: 100% !important;
+  }
+
+
+/*MEDIA MOBILE VIEW */
+@media only screen and (max-width:480px){
+    .wrapperContainer{
+       padding: 20px;
+    }
+
+    .title{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+   
+}
+
+
+
+/*MEDIA TABLET/ IPAD VIEW */
+@media only screen and (max-width:768px){
+    .wrapperContainer{
+       padding: 20px;
+       padding-right: 20px;
+    }
+
+    .title{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+   
+}

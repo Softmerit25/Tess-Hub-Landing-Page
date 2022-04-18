@@ -1,0 +1,42 @@
+.container{
+    width: 100%;
+    height: auto;
+    background: #f5f6f8;
+    text-align: center;
+}
+.wrapper{
+    padding: 0 100px;
+}
+.brands{
+    
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.brandLogo{
+    position: relative;
+    flex:1;
+}
+.desc{
+    font-size: 22px;
+    line-height: 30.02px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/*MEDIA MOBILE VIEW */
+@media only screen and (max-width:480px){
+    .container{
+        text-align: center;
+    }
+    .wrapper{
+        padding: 20px;
+    }
+    .desc{
+        
+        font-size: 18px;
+       
+    }
+}

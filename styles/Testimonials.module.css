@@ -1,0 +1,130 @@
+.container{
+    width: 100%;
+    background: #c9e7f2;
+}
+.wrapperContainer{
+    padding: 50px 100px;
+}
+.wrapper{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    position: relative;
+}
+
+.card:first-child{
+    width: 50%;
+}
+.title{
+    font-size: 50px;
+    font-style:normal;
+    font-weight: 800;
+    line-height: 66px;
+}
+.desc{
+    font-size: 16px;
+    font-style:normal;
+    font-weight: 500;
+    line-height: 29px;
+}
+.cardTest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+    
+}
+.cardBox{
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+.cardContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards{
+    flex: 1;
+    position: relative;
+}
+.cards:first-child{
+    flex:2;
+}
+.cardP{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    font-style: normal;
+}
+.cardQuote{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    font-style: normal;
+}
+
+
+/*MEDIA MOBILE VIEW */
+@media only screen and (max-width:480px){
+    .wrapperContainer{
+        padding: 20px;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .cardContent{
+        gap: 10px;
+    }
+    .card:first-child{
+        width: 100%;
+    }
+
+    .cardP{
+        font-size: 14px;
+    }
+    .cardQuote{
+        font-size: 15px;
+        color: #066181;
+    }
+    .cardTest{
+        flex-direction: column;
+    }
+   
+}
+
+
+
+/*MEDIA TABLET/ IPAD VIEW */
+@media only screen and (max-width:768px){
+    .wrapperContainer{
+        padding: 20px;
+    }
+    .wrapper{
+        flex-direction: row;
+    }
+    .cardContent{
+        gap: 10px;
+    }
+    .card:first-child{
+        width: 100%;
+    }
+
+    .cardP{
+        font-size: 14px;
+    }
+    .cardQuote{
+        font-size: 15px;
+        color: #066181;
+    }
+    .cardTest{
+        flex-direction: column;
+    }
+   .cardBox{
+       width:80%;
+   }
+}
